@@ -1,0 +1,1 @@
+print(f"A={float(input())**2*3.14159:.4f}")
