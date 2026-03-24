@@ -14,9 +14,11 @@ for i in range(M):
     people_total[X-1] -= value
     people_total[Y-1] += value
 
-if len(changed) < M:
+if len(changed) <= M:
     print("S")
 else:
     print("N")
 
-print(max(people_total), min(people_total))
+print(people_total)
+#B
+print(sum(filter(lambda x: x>0, people_total)))
